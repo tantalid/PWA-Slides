@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Shower Presentation Engine</title>
+	<title>Прогрессивные веб-приложения</title>
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,171 +9,391 @@
 </head>
 <body class="shower list">
 	<header class="caption">
-		<h1>Shower Presentation Engine</h1>
-		<p>Yours Truly, Famous Inc.</p>
+		<h1>Прогрессивные веб-приложения</h1>
+		<p>Кузнецов Андрей, BPC Group</p>
 	</header>
 	<section class="slide" id="cover">
-		<h2>Shower Presentation Engine</h2>
-		<p>Brought to you by <a href="http://pepelsbey.net">Vadim Makeev</a></p>
-		<img src="pictures/cover.jpg" alt="" class="cover">
+		<h2>Прогрессивные веб-приложения</h2>
+		<p>Кузнецов Андрей,<br>фронтендр разработчик,<br> BPC Group</p>
 		<!--
 			To apply styles to the certain slides
 			set slide ID to get needed elements
 			-->
 		<style>
 			#cover h2 {
-				margin:30px 0 0;
-				color:#FFF;
+				margin:80px 0 0;
 				text-align:center;
 				font-size:70px;
 				}
 			#cover p {
-				margin:10px 0 0;
-				text-align:center;
-				color:#FFF;
+				margin:80px 0 0;
+				text-align:right;
 				font-style:italic;
-				font-size:20px;
+				font-size:30px;
 				}
 				#cover p a {
 					color:#FFF;
 					}
 		</style>
 	</section>
-	<section class="slide">
-		<h2>Shower key features</h2>
-		<ol>
-			<li>Built on HTML, CSS and vanilla JavaScript</li>
-			<li>Works in all modern browsers</li>
-			<li>Themes are separated from engine</li>
-			<li>Modular and extensible</li>
-			<li>Fully keyboard accessible</li>
-			<li>Printable to PDF</li>
-		</ol>
-		<p class="note">Shower ['ʃəuə] noun. A person or thing that shows.</p>
+
+	<section class="slide" id="boom">
+		<h2>Бум мобильных приложений закончился</h2>
+		<p>Каждый год скачивания падают на 20%</p>
+		<img src="pictures/chart.png" alt="" width="550px">
+		<style>
+			#boom {
+				text-align: center;
+			}
+			#boom p {
+				background-color: white;
+				border: 1px solid #000;
+				position: absolute;
+				top: 350px;
+				right: 150px;
+				padding: 20px;
+				font-size: 25px;
+			}
+		</style>
 	</section>
-	<section class="slide">
-		<h2>Plain text on your slides</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur <a href="#4">adipisicing</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <em>quis nostrud</em> exercitation ullamco laboris <strong>nisi ut aliquip</strong> ex ea commodo consequat. Duis aute irure <i>dolor</i> in reprehenderit in voluptate velit esse cillum <b>dolore</b> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in <code>&lt;culpa&gt;</code> qui officia deserunt mollit anim id est laborum.</p>
+
+	<section class="slide" id="problems">
+		<h2>Нужно искать и устанавливать</h2>
+
+		<img src="pictures/travolta.gif" alt="" id="travolta">
+		<img src="pictures/apps.png" alt="" width="100%">
+
+		<style>
+			#travolta {
+				position: absolute;
+			}
+		</style>
 	</section>
-	<section class="slide">
-		<h2>Two columns if you like</h2>
-		<p class="double">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
+
+	<section class="slide" id="size">
+		<h2>Средний размер приложения 23 Мб</h2>
+		<div class="next">
+			<p>И часто требуют еще что-то докачать после установки</p>
+			<p class="center"><img src="pictures/big.png" alt="" width="250px" align="center"></p>
+		</div>
+
+		<style>
+			.center {
+				text-align: center;
+			}
+		</style>
 	</section>
+
 	<section class="slide">
-		<h2>All kind of lists</h2>
-		<ol>
-			<li>Simple lists are marked with bullets</li>
-			<li>Ordered lists begin with a number</li>
-			<li>You can even nest lists one inside another
-				<ul>
-					<li>Or mix their types</li>
-					<li>But do not go too far</li>
-					<li>Otherwise audience will be bored</li>
-				</ul>
+		<h2>Их нужно удалять и обновлять</h2>
+		<div class="next">
+			<h2>Разные платформы</h2>
+			<p class="center"><img src="pictures/ios.png" alt="" width="250px" align="center"></p>
+		</div>
+
+	</section>
+
+	<section class="slide">
+		<h2>Progressive Web Application (PWA)</h2>
+		<ul>
+			<li class="next">Это сайт</li>
+			<li class="next">Устанавливается</li>
+			<li class="next">Выглядит как нативное приложение</li>
+			<li class="next">Способен работать в оффлайн<br>
+				<img src="pictures/neo.gif" alt="" id="neo">
 			</li>
-			<li>Look, seven rows exactly!</li>
-		</ol>
+			<li class="next">Способен присылать пуш-уведомления</li>
+		</ul>
+		<style>
+			#neo {
+				position: absolute;
+				right: 55px;
+				bottom: 90px;
+			}
+		</style>
 	</section>
+
 	<section class="slide">
-		<h2>Serious citations</h2>
-		<figure>
-			<blockquote>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-			</blockquote>
-			<figcaption>Marcus Tullius Cicero</figcaption>
-		</figure>
+		<h2>Какие плюшки от PWA?</h2>
+		<ul>
+			<li class="next">Простота в разработке</li>
+			<li class="next">Нет костылей<span class="next comment">.  Либо работает, либо не работает :)</span></li>
+			<li class="next">Решен вопрос с SEO</li>
+			<li class="next">Windows Store</li>
+		</ul>
 	</section>
+
 	<section class="slide">
-		<h2>Code samples</h2>
+		<h2>Для бизнеса</h2>
+		<ul>
+			<li class="next">Кроссплатформенность</li>
+			<li class="next">Маленький вес</li>
+			<li class="next">Установку предлагает браузер</li>
+			<li class="next">Моментальная установка</li>
+			<li class="next">Пользователю не нужно обновлять</li>
+		</ul>
+		<img src="pictures/skrudzh.gif" alt="" width="400px" align="right" id="skrudzh">
+		<style>
+			#skrudzh {
+				position: absolute;
+				right: 55px;
+				bottom: 90px;
+			}
+		</style>
+	</section>
+
+
+	<section class="slide">
+		<h2 class="shout">Про технологии</h2>
+	</section>
+
+	<section class="slide">
+		<h2>Прогрессивное приложение подразумевает</h2>
+		<ul>
+			<li class="next">Отзывчивый / адаптивный дизайн</li>
+			<li class="next">Веб манифест</li>
+			<li class="next">Автономный режим</li>
+			<li class="next">Только HTTPS</li>
+			<li class="next">Веб API, такие как пуш-уведомления</li>
+		</ul>
+	</section>
+
+	<section class="slide" id="manifest">
+		<h2>Веб манифест</h2>
 		<pre>
-			<code>&lt;!DOCTYPE html&gt;</code>
-			<code class="mark">&lt;html lang="en"&gt;</code>
-			<code><mark>&lt;head&gt;</mark> <span class="comment">&lt;!--Comment--&gt;</span></code>
-			<code>    &lt;title&gt;Shower&lt;/title&gt;</code>
-			<code>    &lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
-			<code>    &lt;link rel="stylesheet" href="screen.css"&gt;</code>
-			<code><mark>&lt;/head&gt;</mark></code>
+			<code>{</code>
+			<code>	"lang": "ru",</code>
+			<code>	"name": "Progressive Web Application",</code>
+			<code>	"short_name": "PWA Demo",</code>
+			<code>	"description": "Это тестовое Progressive Web Application",</code>
+			<code>	"icons": [{</code>
+			<code>		"src": "./img/icon/app-icon.png",</code>
+			<code>		"sizes": "64x64",</code>
+			<code>		"type": "image/png"</code>
+			<code>		"type": "image/png"</code>
+			<code>		}, ..., {</code>
+			<code>		"src": "./img/icon/app-icon-256.png",</code>
+			<code>		"sizes": "256x256",</code>
+			<code>		"type": "image/png"</code>
+			<code>	}],</code>
+			<code>	"start_url": "/docsite/",</code>
+			<code>	"display": "standalone", <span class="comment">/* fullscreen, minimal-ui, browser */</span></code>
+			<code>	"orientation": "portrait-primary"</code>
+			<code>}</code>
+		</pre>
+		<style>
+			#manifest pre code{
+				font-size: 15px;
+				line-height: 1.5;
+			}
+		</style>
+	</section>
+
+	<section class="slide">
+		<h2>Подключение</h2>
+		<pre>
+			<code>&lt;link rel=&quot;manifest&quot; href=&quot;manifest.json&quot;&gt;</code>
 		</pre>
 	</section>
+
 	<section class="slide">
-		<h2>Even tables</h2>
-		<table>
-		<tr>
-			<th scope="col">Locavore</th>
-			<th>Umami</th>
-			<th>Helvetica</th>
-			<th>Vegan</th>
-		</tr>
-		<tr>
-			<th scope="row">Fingerstache</th>
-			<td>Kale</td>
-			<td>Chips</td>
-			<td>Keytar</td>
-		</tr>
-		<tr>
-			<th scope="row">Sriracha</th>
-			<td>Gluten-free</td>
-			<td>Ennui</td>
-			<td>Keffiyeh</td>
-		</tr>
-		<tr>
-			<th scope="row">Thundercats</th>
-			<td>Jean</td>
-			<td>Shorts</td>
-			<td>Biodiesel</td>
-		</tr>
-		<tr>
-			<th scope="row">Terry</th>
-			<td>Richardson</td>
-			<td>Swag</td>
-			<td>Blog</td>
-		</tr>
-		</table>
-		<p>It’s good to have information organized.</p>
+		<h2>Что с поддержкой?</h2>
+		<img src="pictures/manifest.png" alt="manifest" width="100%"/>
+		<p>Firefox на подходе</p>
 	</section>
-	<section class="slide" id="picture">
-		<h2>Pictures</h2>
-		<img src="pictures/picture.jpg" alt="" class="cover">
+
+	<section class="slide">
+		<h2>Установка</h2>
+		<img src="pictures/addToScreen.jpg" alt="" width="240px" align="right" style="border: 1px solid #c0c0c0" />
+		<div >Не требуется. При этом, браузеры мобильных устройств сами предложат добавить иконку на рабочий стол.</div>
+	</section>
+
+	<section class="slide">
+		<h2>&nbsp;</h2>
+		<img src="pictures/ios-screen.png" alt="" width="240px" align="right" style="border: 1px solid #c0c0c0" />
+		<div >Сохранить иконку сайта можно и в <b>Safari</b>: Поделиться -> На экран “Домой”</div>
+	</section>
+
+	<section class="slide">
+		<h2>Автономный режим</h2>
+
+		<div class="col-1">
+			<h3 class="title">Service worker</h3>
+			<img src="pictures/browsers1.png" height="200px" alt="">
+		</div>
+		<div class="col-2">
+			<h3 class="title">AppCache</h3>
+			<img src="pictures/browsers2.png" height="200px" alt="">
+			<div class="next"><img src="pictures/deprecated.png" alt="" width="100%"></div>
+		</div>
 		<style>
-			#picture h2 {
-				color:#FFF;
-				}
+			.col-1,
+			.col-2 {
+				width: 50%;
+				float: left;
+				text-align: center;
+			}
+			.title {
+				font-size: 35px;
+			}
+		</style>
+	</section>
+
+	<section class="slide">
+		<h2>Сервис-воркеры</h2>
+		<p style="text-align: center;">
+			<img src="pictures/offline-first-diagram.png" alt="" height="400px" align="center">
+		</p>
+	</section>
+
+	<section class="slide">
+		<h2>Сервис-воркеры</h2>
+		<ul>
+			<li>Независимый процесс</li>
+			<li>Проксирование запросов</li>
+			<li>Кэширование ресурсов</li>
+			<li>Кэширование ответов</li>
+			<li>Отложенные запросы</li>
+			<li>Автообновление</li>
+			<li>В общем крутая штука!</li>
+		</ul>
+		<a href="https://serviceworke.rs/">serviceworke.rs</a>
+	</section>
+
+	<section class="slide">
+		<h2>Что с поддержкой?</h2>
+		<img src="pictures/caniuse-sw.png" alt="manifest" width="100%"/>
+	</section>
+
+	<section class="slide">
+		<h2>Пуш-уведомления</h2>
+		<ul>
+			<li class="next">Уведомления от сервера пользователю
+				<img src="pictures/push-message.gif" alt="" align="right"  width="500px" style="margin-right: -110px; margin-top: -50px">
+			</li>
+			<li class="next">Используют сервис-воркеры</li>
+			<li class="next">Даже когда <b>приложение закрыто</b></li>
+			<li class="next">Нужно разрешение</li>
+			<li class="next"><b>Как нативные</b></li>
+		</ul>
+
+	</section>
+	<section class="slide" >
+		<h2>WEB API</h2>
+		<div class="col-3" style="text-align: left;">
+			<ul>
+				<li>WebStorage</li>
+				<li>Video & Audio</li>
+				<li>Canvas</li>
+				<li>WebGL</li>
+				<li>Geolocation </li>
+				<li>Web sockets</li>
+				<li>Full Screen</li>
+			</ul>
+		</div>
+		<div class="col-3" style="text-align: left;">
+			<ul>
+				<li>Device Orientation</li>
+				<li>Screen Orientation</li>
+				<li>Battery Status</li>
+				<li>Ambient Light Sensor</li>
+				<li>Vibration API</li>
+				<li>Web bluetooth</li>
+				<li>Payments</li>
+			</ul>
+		</div>
+
+		<div class="col-3" style="text-align: left;">
+			<ul>
+				<li>Network Information </li>
+				<li>Web Push</li>
+				<li>Camera</li>
+				<li>Bluetooth</li>
+				<li>...</li>
+			</ul>
+			<a href="https://developer.mozilla.org/ru/docs/Web/Reference/API">Web API</a>
+		</div>
+		<style>
+			.col-3 {
+				width: 33%;
+				float: left;
+			}
 		</style>
 	</section>
 	<section class="slide">
-		<h2 class="shout shrink">You can even shout this way</h2>
+		<h2>Недостатки PWA</h2>
+		<img src="pictures/yosemite-safai_icon.png" alt="" width="200px" align="right">
+		<ul>
+			<li><b>Свежий подход</b></li>
+			<li>Нет поддержки сервис-воркеров у <b>webkit</b></li>
+		</ul>
 	</section>
 	<section class="slide">
-		<h2>Inner navigation</h2>
-		<ol>
-			<li>Lets you reveal list items one by one</li>
-			<li class="next">To keep some key points</li>
-			<li class="next">In secret from audience</li>
-			<li class="next">But it will work only once</li>
-			<li class="next">Nobody wants to see the same joke twice</li>
-		</ol>
+		<h2>Cистема для проверки качества PWA</h2>
+		<p class="title"><a href="https://github.com/GoogleChrome/lighthouse">Lighthouse</a></p>
+		<img src="pictures/lighthouse.png" alt="" width="100%">
 	</section>
-	<section class="slide grid">
-		<h2>All nicely aligned to grid</h2>
+	<section class="slide">
+		<h2 class="shout shrink">Демо</h2>
 	</section>
-	<section class="slide" id="see-more">
-		<h2 class="shout">
-			<img src="pictures/logo.svg" alt="Shower logo">
-			<a href="https://github.com/shower/shower">See more on GitHub</a>
-		</h2>
+
+	<section class="slide">
+		<p class="title">Фитнес трекер Iwown I5 plus</p>
+		<img src="pictures/Iwown I5 plus.jpg" alt="" width="200px" align="right">
+		<p class="next">
+			<img src="pictures/nRF connect.jpg" alt="" width="220px" align="left">
+		</p>
+	</section>
+
+	<section class="slide">
+		<pre>
+			<code class="next">07-26-01-00-17-01-00-10-00-00 <span class="comment">// => 294</span></code>
+			<code class="next">07-36-01-00-29-01-00-11-00-00 <span class="comment">// => 310</span></code>
+			<code class="next">07-70-01-00-5С-01-00-14-00-00 <span class="comment">// => 368</span></code>
+			<code class="next">07-08-05-00-2С-04-00-49-00-00 <span class="comment">// => 1288</span></code>
+		</pre>
+	</section>
+
+	<section class="slide">
+		<pre>
+			<code>07-<mark class="important">26-01</mark>-00-17-01-00-10-00-00 <span class="comment">// => 294</span></code>
+			<code>07-<mark class="important">36-01</mark>-00-29-01-00-11-00-00 <span class="comment">// => 310</span></code>
+			<code>07-<mark class="important">70-01</mark>-00-5С-01-00-14-00-00 <span class="comment">// => 368</span></code>
+			<code>07-<mark class="important">08-05</mark>-00-2С-04-00-49-00-00 <span class="comment">// => 1288</span></code>
+		</pre>
+
+		<pre class="next">
+			<code>
+				<mark class="important">0126</mark><span class="comment"> => 294</span>
+				<mark class="important">0136</mark><span class="comment"> => 310</span>
+				<mark class="important">0170</mark><span class="comment"> => 368</span>
+				<mark class="important">0508</mark><span class="comment"> => 1288</span>
+			</code>
+		</pre>
+	</section>
+
+	<section class="slide" id="theend">
+		<h2 class="shout">Спасибо за внимание</h2>
+		<a href="https://github.com/chakveselchak/Progressive-Web-Application-Demo">
+			<img src="pictures/GitHub-Mark.png" alt="" width="100px" border="0" align="center">
+			<p>Ссылка на демо</p>
+		</a>
 		<style>
-			#see-more h2 {
-				font-size:100px
-				}
-			#see-more img {
-				width:0.72em;
-				height:0.72em;
-				}
+			#theend .shout{
+				font-size: 90px;
+			}
+			#theend a {
+				text-decoration: none;
+				background: none;
+				text-align: center;
+				display: block;
+				position: absolute;
+				bottom: 50px;
+				left: 50%;
+				margin-left: -105px;
+			}
 		</style>
 	</section>
-	<p class="badge">
-		<a href="https://github.com/shower/shower">Fork me on GitHub</a>
-	</p>
 	<!--
 		To hide progress bar from entire presentation
 		just remove “progress” element.
