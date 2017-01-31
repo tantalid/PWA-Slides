@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Почему уже пора делать PWA</title>
+	<title>Прогрессивные веб-приложения</title>
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,11 +9,11 @@
 </head>
 <body class="shower list">
 	<header class="caption">
-		<h1>Почему уже пора делать PWA</h1>
+		<h1>Прогрессивные веб-приложения</h1>
 		<p>Кузнецов Андрей, BPC Group</p>
 	</header>
 	<section class="slide" id="cover">
-		<h2>Почему уже пора делать PWA</h2>
+		<h2>Прогрессивные веб-приложения</h2>
 		<p>Кузнецов Андрей,<br>фронтендр разработчик,<br> BPC Group</p>
 		<!--
 			To apply styles to the certain slides
@@ -21,12 +21,12 @@
 			-->
 		<style>
 			#cover h2 {
-				margin:150px 0 0;
+				margin:80px 0 0;
 				text-align:center;
 				font-size:70px;
 				}
 			#cover p {
-				margin:100px 0 0;
+				margin:80px 0 0;
 				text-align:right;
 				font-style:italic;
 				font-size:30px;
@@ -36,6 +36,7 @@
 					}
 		</style>
 	</section>
+
 	<section class="slide" id="boom">
 		<h2>Бум мобильных приложений закончился</h2>
 		<p>Каждый год скачивания падают на 20%</p>
@@ -56,8 +57,6 @@
 		</style>
 	</section>
 
-
-
 	<section class="slide" id="problems">
 		<h2>Нужно искать и устанавливать</h2>
 
@@ -68,45 +67,134 @@
 			#travolta {
 				position: absolute;
 			}
+		</style>
+	</section>
 
+	<section class="slide" id="size">
+		<h2>Средний размер приложения 23 Мб</h2>
+		<div class="next">
+			<p>И часто требуют еще что-то докачать после установки</p>
+			<p class="center"><img src="pictures/big.png" alt="" width="250px" align="center"></p>
+		</div>
+
+		<style>
+			.center {
+				text-align: center;
+			}
 		</style>
 	</section>
 
 	<section class="slide">
-		<h2>Средний размер приложения 23 Мб</h2>
-		<p class="next">И часто требуют еще что-то докачать после установки<br>
-			<img src="pictures/big.png" alt="" width="250px">
-		</p>
-	</section>
-
-	<section class="slide">
 		<h2>Их нужно удалять и обновлять</h2>
-		<h2 class="next">Разные платформы</h2>
+		<div class="next">
+			<h2>Разные платформы</h2>
+			<p class="center"><img src="pictures/ios.png" alt="" width="250px" align="center"></p>
+		</div>
+
 	</section>
 
 	<section class="slide">
 		<h2>Progressive Web Application (PWA)</h2>
+		<ul>
+			<li class="next">Это сайт</li>
+			<li class="next">Устанавливается</li>
+			<li class="next">Выглядит как нативное приложение</li>
+			<li class="next">Способен работать в оффлайн<br>
+				<img src="pictures/neo.gif" alt="" id="neo">
+			</li>
+			<li class="next">Способен присылать пуш-уведомления</li>
+		</ul>
+		<style>
+			#neo {
+				position: absolute;
+				right: 55px;
+				bottom: 90px;
+			}
+		</style>
 	</section>
 
 	<section class="slide">
-		<h2>Two columns if you like</h2>
-		<p class="double">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
+		<h2>Какие плюшки от PWA?</h2>
+		<ul>
+			<li class="next">Простота в разработке</li>
+			<li class="next">Нет костылей<span class="next comment">.  Либо работает, либо не работает :)</span></li>
+			<li class="next">Решен вопрос с SEO</li>
+			<li class="next">Windows Store</li>
+		</ul>
 	</section>
+
 	<section class="slide">
-		<h2>All kind of lists</h2>
-		<ol>
-			<li>Simple lists are marked with bullets</li>
-			<li>Ordered lists begin with a number</li>
-			<li>You can even nest lists one inside another
-				<ul>
-					<li>Or mix their types</li>
-					<li>But do not go too far</li>
-					<li>Otherwise audience will be bored</li>
-				</ul>
-			</li>
-			<li>Look, seven rows exactly!</li>
-		</ol>
+		<h2>Для бизнеса</h2>
+		<ul>
+			<li class="next">Кроссплатформенность</li>
+			<li class="next">Маленький вес</li>
+			<li class="next">Установку предлагает браузер</li>
+			<li class="next">Моментальная установка</li>
+			<li class="next">Пользователю не нужно обновлять</li>
+		</ul>
+		<img src="pictures/skrudzh.gif" alt="" width="400px" align="right" id="skrudzh">
+		<style>
+			#skrudzh {
+				position: absolute;
+				right: 55px;
+				bottom: 90px;
+			}
+		</style>
 	</section>
+
+
+	<section class="slide">
+		<h2 class="shout">Про технологии</h2>
+	</section>
+
+	<section class="slide">
+		<h2>Прогрессивное приложение подразумевает</h2>
+		<ul>
+			<li class="next">Отзывчивый / адаптивный дизайн</li>
+			<li class="next">Веб манифест</li>
+			<li class="next">Автономный режим</li>
+			<li class="next">Только HTTPS</li>
+			<li class="next">Веб API, такие как пуш-уведомления</li>
+		</ul>
+	</section>
+
+	<section class="slide" id="manifest">
+		<h2>Веб манифест</h2>
+		<pre>
+			<code>{</code>
+			<code>	"lang": "ru",</code>
+			<code>	"name": "Progressive Web Application",</code>
+			<code>	"short_name": "PWA Demo",</code>
+			<code>	"description": "Это тестовое Progressive Web Application",</code>
+			<code>	"icons": [{</code>
+			<code>		"src": "./img/icon/app-icon.png",</code>
+			<code>		"sizes": "64x64",</code>
+			<code>		"type": "image/png"</code>
+			<code>		"type": "image/png"</code>
+			<code>		}, ..., {</code>
+			<code>		"src": "./img/icon/app-icon-256.png",</code>
+			<code>		"sizes": "256x256",</code>
+			<code>		"type": "image/png"</code>
+			<code>	}],</code>
+			<code>	"start_url": "/docsite/",</code>
+			<code>	"display": "standalone", <span class="comment">/* fullscreen, minimal-ui, browser */</span></code>
+			<code>	"orientation": "portrait-primary"</code>
+			<code>}</code>
+		</pre>
+		<style>
+			#manifest pre code{
+				font-size: 15px;
+				line-height: 1.5;
+			}
+		</style>
+	</section>
+
+	<section class="slide">
+		<h2>Что с поддержкой?</h2>
+		<img src="pictures/manifest.png" alt="manifest" width="100%"/>
+		<p>Firefox на подходе</p>
+	</section>
+
 	<section class="slide">
 		<h2>Serious citations</h2>
 		<figure>
